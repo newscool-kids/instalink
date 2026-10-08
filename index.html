@@ -6,7 +6,14 @@
 <meta name="description" content="초등학생 눈높이로 읽는 진짜 뉴스, 뉴스쿨">
 <meta property="og:title" content="뉴스쿨 News'Cool">
 <meta property="og:description" content="초등학생 눈높이로 읽는 진짜 뉴스">
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}
+.feature.hangeul{background:#2B2420}
+.feature.hangeul::before{background-image:none;content:"ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ";color:#F4E6D0;opacity:.07;font-family:var(--display);font-size:3.2rem;line-height:1.15;letter-spacing:.2em;padding:6px 10px;word-break:keep-all;overflow:hidden}
+.feature.hangeul p{color:#D9CBB6;word-break:keep-all}
+.feature.hangeul .btn.ghost{background:#433832;color:#F7EFE4}
+.feature.hangeul .btn.ghost:hover{background:#54463E}
+.feature.hangeul .btn.main.off{color:#D9CBB6;border-color:#5A4B42}
+</style>
 <title>뉴스쿨 News'Cool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,12 +128,12 @@ footer a{color:var(--green-ink);font-weight:500}
     <p class="tag">초등학생 눈높이로 읽는 진짜 뉴스</p>
   </header>
 
-  <section class="feature">
-    <h2>🚀 이번 주는 ‘우주’입니다</h2>
-    <p>누리호부터 달 탐사까지, 아이와 읽을 우주 뉴스를 모았어요.</p>
+  <section class="feature hangeul">
+    <h2>✍️ 이번 주는 ‘한글’입니다</h2>
+    <p>10월 9일 한글날, 아이와 함께 우리 글자 이야기를 읽어요.</p>
     <div class="btns">
-      <a class="btn main" href="https://www.newscool.co/article-5thnuri/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=2026_nuriho&amp;utm_content=profile_nuriho" target="_blank" rel="noopener">이번 주 누리호 소식 <span aria-hidden="true">→</span></a>
-      <a class="btn ghost" href="https://www.newscool.co/tag/space/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=2026_nuriho&amp;utm_content=profile_space_tag" target="_blank" rel="noopener">우주 뉴스 모아 보기 <span aria-hidden="true">→</span></a>
+      <div class="btn main off" aria-disabled="true">이번 주 한글날 소식 <small>곧 열려요</small></div>
+      <a class="btn ghost" href="https://www.newscool.co/article-gwanghwamun/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=2026_hangeul_day&amp;utm_content=profile_hangeul_gwanghwamun" target="_blank" rel="noopener">‘光化門’을 ‘광화문’으로? 다시 읽기 <span aria-hidden="true">→</span></a>
     </div>
   </section>
 
