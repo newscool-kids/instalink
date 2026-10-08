@@ -13,6 +13,14 @@
 .feature.hangeul .btn.ghost{background:#433832;color:#F7EFE4}
 .feature.hangeul .btn.ghost:hover{background:#54463E}
 .feature.hangeul .btn.main.off{color:#D9CBB6;border-color:#5A4B42}
+
+.hlist{display:flex;flex-direction:column;gap:8px}
+.hlist h3{margin:4px 0 0;font-size:.82rem;font-weight:700;letter-spacing:.04em;color:#D9CBB6}
+.hlink{display:grid;grid-template-columns:1fr auto;grid-template-areas:"meta arrow" "title arrow";align-items:center;column-gap:10px;background:#433832;color:#F7EFE4;border-radius:14px;padding:11px 16px}
+.hlink:hover{background:#54463E}
+.hmeta{grid-area:meta;font-size:.72rem;color:#C9B9A3;font-variant-numeric:tabular-nums}
+.htitle{grid-area:title;font-weight:700;font-size:.95rem;line-height:1.4;word-break:keep-all;min-width:0}
+.hlink .arrow{grid-area:arrow;color:#F7EFE4}
 </style>
 <title>뉴스쿨 News'Cool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,8 +140,13 @@ footer a{color:var(--green-ink);font-weight:500}
     <h2>✍️ 이번 주는 ‘한글’입니다</h2>
     <p>10월 9일 한글날, 아이와 함께 우리 글자 이야기를 읽어요.</p>
     <div class="btns">
-      <div class="btn main off" aria-disabled="true">이번 주 한글날 소식 <small>9일 발행 예정</small></div>
-      <a class="btn ghost" href="https://www.newscool.co/article-gwanghwamun/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=2026_hangeul_day&amp;utm_content=profile_hangeul_gwanghwamun" target="_blank" rel="noopener">‘光化門’을 ‘광화문’으로? 다시 읽기 <span aria-hidden="true">→</span></a>
+      <div class="btn main off" aria-disabled="true">이번 주 한글날 소식 <small>곧 열려요</small></div>
+    </div>
+    <div class="hlist">
+      <h3>한글날 뉴스 모아 보기</h3>
+        <a class="hlink" href="https://www.newscool.co/article-hangeulnal577/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=2026_hangeul_day&amp;utm_content=profile_hangeul_heroes" target="_blank" rel="noopener"><span class="hmeta">2023 · 제68호</span><span class="htitle">한글을 지켜낸 숨은 주역들</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="hlink" href="https://www.newscool.co/article-dictionary/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=2026_hangeul_day&amp;utm_content=profile_hangeul_dictionary" target="_blank" rel="noopener"><span class="hmeta">2024 · 제117호</span><span class="htitle">국어사전이 살아있다?!</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="hlink" href="https://www.newscool.co/article-gwanghwamun/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=2026_hangeul_day&amp;utm_content=profile_hangeul_gwanghwamun" target="_blank" rel="noopener"><span class="hmeta">2026 · 제209호</span><span class="htitle">‘光化門’을 ‘광화문’으로? 한글 현판 이야기</span><span class="arrow" aria-hidden="true">→</span></a>
     </div>
   </section>
 
